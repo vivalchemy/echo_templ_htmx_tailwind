@@ -1,0 +1,13 @@
+package components
+
+templ Hello(name string) {
+	<div class="bg-yellow-500">Hello, { name }</div>
+	<div>
+		<a href="hello.templ">This is something</a>
+	</div>
+}
+
+templ Time() {
+	<div class="bg-yellow-500">I give you another thing</div>
+	@Hello("Templ")
+}
